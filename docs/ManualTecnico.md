@@ -360,7 +360,7 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 
 **Agencias**
 
-| ID  | Nombre                       | Tipo     |<img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" />  Departamento   | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Municipio         | Dirección | Código Postal | Teléfono       |
+| ID  | Nombre                       | Tipo     |<img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" />  Departamento   | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Municipio         | Dirección | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Código Postal | Teléfono       |
 | --- | ---------------------------- | -------- | -------------- | ----------------- | --------- | ------------- | -------------- |
 | 1   | Sucursal Antigua Guatemala 1 | Sucursal | Sacatepéquez   | Antigua Guatemala | Zona 7    | 91405         | +502 8036-8423 |
 | 2   | Sucursal Escuintla 2         | Sucursal | Escuintla      | Escuintla         | Zona 1    | 97145         | +502 9525-7114 |
@@ -400,6 +400,88 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 |   3  | Quetzaltenango    | 3         | 53915         |
 |   4  | Cobán             | 4         | 31535         |
 |   5  | Flores            | 5         | 63389         |
+
+
+---
+
+**Tarjetas de crédito**
+
+| ID Tarjeta | ID Cliente | Número de Tarjeta | Límite de Crédito | Saldo Actual | Fecha de Emisión | Fecha de Expiración | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Estado    | Fecha de Corte | Día del Ciclo |
+| ---------- | ---------- | ----------------- | ----------------- | ------------ | ---------------- | ------------------- | --------- | -------------- | ------------- |
+| 1          | 558120     | 4872410269895827  | 4344.96           | 20358.67     | 2022-02-09       | 2025-05-04          | Bloqueada | 2022-03-06     | 6             |
+| 2          | 443984     | 4,78043E+15       | 48263.8           | 12583.92     | 2021-04-29       | 2025-11-10          | Activa    | 2021-05-26     | 26            |
+| 3          | 709855     | 4653562424107275  | 37894.69          | 16274.3      | 2021-12-10       | 2026-08-08          | Bloqueada | 2022-01-08     | 8             |
+| 4          | 495584     | 4935123661880312  | 3610.3            | 31113.15     | 2020-11-21       | 2025-07-26          | Bloqueada | 2020-12-18     | 18            |
+| 5          | 621646     | 4,91859E+15       | 35118.01          | 5054.92      | 2023-10-06       | 2028-02-05          | Cancelada | 2023-11-05     | 5             |
+
+<div align="center">
+🔽🔽 Resultados tras Normalizar 🔽🔽
+</div>
+
+
+**Tarjetas de credito**
+
+| ID Tarjeta | ID Cliente | Número de Tarjeta | Límite de Crédito | Saldo Actual | Fecha de Emisión | Fecha de Expiración | ID Estado    | Fecha de Corte | Día del Ciclo |
+| ---------- | ---------- | ----------------- | ----------------- | ------------ | ---------------- | ------------------- | --------- | -------------- | ------------- |
+| 1          | 558120     | 4872410269895827  | 4344.96           | 20358.67     | 2022-02-09       | 2025-05-04          | 3 | 2022-03-06     | 6             |
+| 2          | 443984     | 4,78043E+15       | 48263.8           | 12583.92     | 2021-04-29       | 2025-11-10          | 1    | 2021-05-26     | 26            |
+| 3          | 709855     | 4653562424107275  | 37894.69          | 16274.3      | 2021-12-10       | 2026-08-08          | 3 | 2022-01-08     | 8             |
+| 4          | 495584     | 4935123661880312  | 3610.3            | 31113.15     | 2020-11-21       | 2025-07-26          | 3 | 2020-12-18     | 18            |
+| 5          | 621646     | 4,91859E+15       | 35118.01          | 5054.92      | 2023-10-06       | 2028-02-05          | 2 | 2023-11-05     | 5             |
+
+**Estado de la tarjeta**
+
+| ID Estado | Estado    |
+| --------- | --------- |
+| 1         | Activa    |
+| 2         | Cancelada |
+| 3         | Bloqueada |
+
+---
+
+**Prestamos**
+
+| ID Préstamo | ID Cliente | Monto del Préstamo | Tasa de Interés | Fecha de Desembolso | Fecha de Vencimiento | Saldo Pendiente | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Estado del Préstamo |
+| ----------- | ---------- | ------------------ | --------------- | ------------------- | -------------------- | --------------- | ------------------- |
+| 1           | 495798     | 964203.64          | 6.63            | 2023-11-19          | 2032-06-06           | 674174.18       | Vencido             |
+| 2           | 42734      | 811935.67          | 13.42           | 2023-05-07          | 2028-08-29           | 756664.53       | Activo              |
+| 3           | 540710     | 961457.89          | 13.68           | 2021-10-28          | 2030-03-10           | 200162.19       | Vencido             |
+| 4           | 983331     | 78869.24           | 11.42           | 2023-05-14          | 2026-12-17           | 67546.61        | Vencido             |
+| 5           | 409214     | 456168.05          | 6.93            | 2020-05-18          | 2026-07-08           | 729762.37       | Activo              |
+
+<div align="center">
+🔽🔽 Resultados tras Normalizar 🔽🔽
+</div>
+
+**Prestamos**
+
+| ID Préstamo | ID Cliente | Monto del Préstamo | Tasa de Interés | Fecha de Desembolso | Fecha de Vencimiento | Saldo Pendiente | ID Estado Prestamo |
+| ----------- | ---------- | ------------------ | --------------- | ------------------- | -------------------- | --------------- | ------------------- |
+| 1           | 495798     | 964203.64          | 6.63            | 2023-11-19          | 2032-06-06           | 674174.18       | 1                   |
+| 2           | 42734      | 811935.67          | 13.42           | 2023-05-07          | 2028-08-29           | 756664.53       | 1                   |
+| 3           | 540710     | 961457.89          | 13.68           | 2021-10-28          | 2030-03-10           | 200162.19       | 2                   |
+| 4           | 983331     | 78869.24           | 11.42           | 2023-05-14          | 2026-12-17           | 67546.61        | 1                   |
+| 5           | 409214     | 456168.05          | 6.93            | 2020-05-18          | 2026-07-08           | 729762.37       | 3                   |
+
+**Estado del prestamos**
+
+| ID_Prestamo | Estado del Préstamo |
+| ----------- | ------------------- |
+| 1           | Activo              |
+| 2           | Vencido             |
+| 3           | Cancelado           |
+
+---
+
+**Empleado**
+
+| ID  | Nombre   | Apellido   | Rol                 | Departamento   | <img src="https://www.notion.so/icons/hexagon-five-sixths_red.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_red.svg" width="25px" /> Sucursal/Agencia     | Teléfono       |
+| --- | -------- | ---------- | ------------------- | -------------- | -------------------- | -------------- |
+| 1   | Nombre_1 | Apellido_1 | Auditor Interno     | Petén          | Sucursal/Agencia 528 | +502 7815-2167 |
+| 2   | Nombre_2 | Apellido_2 | Administrador       | Chiquimula     | Sucursal/Agencia 171 | +502 3808-9764 |
+| 3   | Nombre_3 | Apellido_3 | Atención al Cliente | Jutiapa        | Sucursal/Agencia 103 | +502 4899-1699 |
+| 4   | Nombre_4 | Apellido_4 | Oficial de Crédito  | Quetzaltenango | Sucursal/Agencia 36  | +502 3452-1726 |
+| 5   | Nombre_5 | Apellido_5 | Soporte Técnico     | Jutiapa        | Sucursal/Agencia 583 | +502 8283-6524 |
 
 ## 🧠 Modelo Conceptual
 
