@@ -313,7 +313,9 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 
 </aside>
 
-### Clientes
+<br/>
+
+**Clientes**
 
 | ID  | Nombre   | Apellido   | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Número de Cuenta | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Tipo de Cuenta     | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Saldo     | Teléfono       |
 | --- | -------- | ---------- | ---------------- | ------------------ | --------- | -------------- |
@@ -323,8 +325,11 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 | 4   | Nombre_4 | Apellido_4 | 74601803-4       | Ahorro             | 30357.74  | +502 7371-9552 |
 | 5   | Nombre_5 | Apellido_5 | 18184518-5       | Ahorro             | 270027.6  | +502 1699-8122 |
 
+<div align="center">
+🔽🔽 Resultados tras Normalizar 🔽🔽
+</div>
 
-### Clientes
+**Clientes**
 
 | ID  | Nombre   | Apellido   | Teléfono       | Id_cuenta |
 | --- | -------- | ---------- | -------------- | --------- |
@@ -334,7 +339,7 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 | 4   | Nombre_4 | Apellido_4 | +502 7371-9552 | 4         |
 | 5   | Nombre_5 | Apellido_5 | +502 1699-8122 | 5         |
 
-### Cuentas
+**Cuentas**
 
 | ID  | Número de Cuenta | ID Tipo de Cuenta | Saldo     |
 | --- | ---------------- | ----------------- | --------- |
@@ -344,13 +349,57 @@ Las transacciones son el registro detallado de todas las operaciones financieras
 | 4   | 74601803-4       | 1                 | 30357.74  |
 | 5   | 18184518-5       | 1                 | 270027.6  |
 
-### Tipo de cuenta
+**Tipo de cuenta**
 
 | ID  | Tipo de Cuenta |
 | --- | -------------- |
 | 1   | Ahorro         |
 | 2   | Monetario      |
 
+---
+
+**Agencias**
+
+| ID  | Nombre                       | Tipo     |<img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" />  Departamento   | <img src="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" alt="https://www.notion.so/icons/hexagon-five-sixths_orange.svg" width="25px" /> Municipio         | Dirección | Código Postal | Teléfono       |
+| --- | ---------------------------- | -------- | -------------- | ----------------- | --------- | ------------- | -------------- |
+| 1   | Sucursal Antigua Guatemala 1 | Sucursal | Sacatepéquez   | Antigua Guatemala | Zona 7    | 91405         | +502 8036-8423 |
+| 2   | Sucursal Escuintla 2         | Sucursal | Escuintla      | Escuintla         | Zona 1    | 97145         | +502 9525-7114 |
+| 3   | Sucursal Quetzaltenango 3    | Sucursal | Quetzaltenango | Quetzaltenango    | Zona 1    | 53915         | +502 2873-4763 |
+| 4   | Sucursal Cobán 4             | Sucursal | Alta Verapaz   | Cobán             | Zona 8    | 31535         | +502 6809-5562 |
+| 5   | Sucursal Flores 5            | Sucursal | Petén          | Flores            | Zona 10   | 63389         | +502 5942-1959 |
+
+<div align="center">
+🔽🔽 Resultados tras Normalizar 🔽🔽
+</div>
+
+**Agencias/Sucursales**
+
+| ID  | Nombre                       | Tipo     | Teléfono       | ID_Departamento | Dirección |
+| --- | ---------------------------- | -------- | -------------- | --------------- | --------- |
+| 1   | Sucursal Antigua Guatemala 1 | Sucursal | +502 8036-8423 | 1               | Zona 7    |
+| 2   | Sucursal Escuintla 2         | Sucursal | +502 9525-7114 | 2               | Zona 1    |
+| 3   | Sucursal Quetzaltenango 3    | Sucursal | +502 2873-4763 | 3               | Zona 1    |
+| 4   | Sucursal Cobán 4             | Sucursal | +502 6809-5562 | 4               | Zona 8    |
+| 5   | Sucursal Flores 5            | Sucursal | +502 5942-1959 | 5               | Zona 10   |
+
+**Departamentos**
+
+| ID  | Departamento   |
+| --- | -------------- |
+| 1   | Sacatepéquez   |
+| 2   | Escuintla      |
+| 3   | Quetzaltenango |
+| 4   | Alta Verapaz   |
+| 5   | Petén          |
+
+**Municipio**
+| id  | nombre         |  id_departamento | Código Postal
+| ---- | ----------------- | ------------- | ------------- |
+|   1  | Antigua Guatemala | 1         | 91405         |
+|   2  | Escuintla         | 2         | 97145         |
+|   3  | Quetzaltenango    | 3         | 53915         |
+|   4  | Cobán             | 4         | 31535         |
+|   5  | Flores            | 5         | 63389         |
 
 ## 🧠 Modelo Conceptual
 
