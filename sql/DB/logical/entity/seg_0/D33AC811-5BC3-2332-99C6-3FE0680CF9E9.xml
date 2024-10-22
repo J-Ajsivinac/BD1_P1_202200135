@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D33AC811-5BC3-2332-99C6-3FE0680CF9E9" name="Clientes">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D33AC811-5BC3-2332-99C6-3FE0680CF9E9" name="CLIENTE">
 <createdBy>mesoi</createdBy>
 <createdTime>2024-09-13 01:23:10 UTC</createdTime>
 <ownerDesignName>DB</ownerDesignName>
@@ -83,8 +83,9 @@
 <createdBy>mesoi</createdBy>
 <createdTime>2024-09-13 03:45:38 UTC</createdTime>
 <ownerDesignName>DB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="true"/>
+<item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

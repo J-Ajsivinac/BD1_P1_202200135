@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9420A4A-535E-6047-CF43-B8D58C718F13" name="Prestamos">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9420A4A-535E-6047-CF43-B8D58C718F13" name="PRESTAMO">
 <createdBy>mesoi</createdBy>
 <createdTime>2024-09-13 01:24:37 UTC</createdTime>
 <ownerDesignName>DB</ownerDesignName>
@@ -102,6 +102,7 @@
 <item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="true"/>
 </engineerTo>
 <referedAttribute>3E040F49-EF0A-FA90-99AB-60A3F4D72B95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -115,6 +116,7 @@
 <item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="true"/>
 </engineerTo>
 <referedAttribute>172AC8AC-528C-F2D5-A930-F1BDA46B1A2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
@@ -125,8 +127,9 @@
 <createdBy>mesoi</createdBy>
 <createdTime>2024-09-13 04:21:53 UTC</createdTime>
 <ownerDesignName>DB</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="true"/>
+<item key="961B8C99-B512-7E8A-0731-14A4EBE42F8B" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

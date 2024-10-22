@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B60D03F2-63E7-C6EC-4C5F-DB1CB2B369FA" name="Estados_Tarjeta">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B60D03F2-63E7-C6EC-4C5F-DB1CB2B369FA" name="ESTADO_TARJETA">
 <createdBy>mesoi</createdBy>
 <createdTime>2024-09-23 03:24:46 UTC</createdTime>
 <generatorID>0876E037-EFED-BE7A-A251-C0DD9E1CA6B3</generatorID>
